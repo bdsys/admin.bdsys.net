@@ -27,36 +27,45 @@ $(document).ready(function ()
 		$("#prodAppsToggle").slideToggle("slow");
 	});
 	
+	$("#domainControlToggle").hide();
+	$("#domainControlToggleButton").click(function() {
+		$("#domainControlToggle").slideToggle("slow");
+	});
+	
+	
+	$("#googleControlToggle").hide();
+	$("#googleControlToggleButton").click(function() {
+		$("#googleControlToggle").slideToggle("slow");
+	});
 	
 	//Fades other three contact buttons upon hovering over one of them
 	$("#emailIcon").mouseenter(function (){
-		$("#twitterIcon").fadeTo("slow", 0.5);
-		$("#facebookIcon").fadeTo("slow", 0.5);
+		$("#twitterIcon").fadeTo("fast", 0.5);
+		$("#facebookIcon").fadeTo("fast", 0.5);
 	});
 	$("#emailIcon").mouseleave(function (){
-		$("#twitterIcon").fadeTo("slow", 1);
-		$("#facebookIcon").fadeTo("slow", 1);
+		$("#twitterIcon").fadeTo("fast", 1);
+		$("#facebookIcon").fadeTo("fast", 1);
 	});
 	
 	
 	$("#twitterIcon").mouseenter(function (){
-		$("#emailIcon").fadeTo("slow", 0.5);
-		$("#facebookIcon").fadeTo("slow", 0.5);
+		$("#emailIcon").fadeTo("fast", 0.5);
+		$("#facebookIcon").fadeTo("fast", 0.5);
 	});
 	$("#twitterIcon").mouseleave(function (){
-		$("#emailIcon").fadeTo("slow", 1);
-		$("#facebookIcon").fadeTo("slow", 1);
+		$("#emailIcon").fadeTo("fast", 1);
+		$("#facebookIcon").fadeTo("fast", 1);
 	});
 	
 	
 	$("#facebookIcon").mouseenter(function (){
-		$("#twitterIcon").fadeTo("slow", 0.5);
-		$("#emailIcon").fadeTo("slow", 0.5);
+		$("#twitterIcon").fadeTo("fast", 0.5);
+		$("#emailIcon").fadeTo("fast", 0.5);
 	});
 	$("#facebookIcon").mouseleave(function (){
-		$("#twitterIcon").fadeTo("slow", 1);
-		$("#emailIcon").fadeTo("slow", 1);
+		$("#twitterIcon").fadeTo("fast", 1);
+		$("#emailIcon").fadeTo("fast", 1);
 	});
 	
 }); 
-

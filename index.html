@@ -14,11 +14,13 @@
     <header id="topofpage">
         <h1>Black Dog Systems Administration</h1>
         <img id="bdsysLogo" src="http://s3.amazonaws.com/codecademy-production/profile_thumbnail/5110a11631e4b98fd10020c4_420022162.png"/>
-        <h6 class="italicObject">The One Stop for BDSYS Admins</h6>
+        <h6 class="italicObject">The One Stop for BDSYS Admins
+        	<br><span class="smallFont"> <li>Click to expand Menu when you see these!</li></span></h6>
+
         </header>
         <!-- Header above is on every page -->
         
-        <nav>	
+        <nav class="center" id="mainMenu">	
         		<div class="navTable" id="navLeft">
         	<table>
         		<thead>
@@ -27,7 +29,7 @@
         			<tbody>
         				<tr>
         					<ul>
-        						<li class="mainLi, navTableRow"><a href="www.bdsys.net"><p><span class="blackText, italicBoldObject">WWW</span>.bdsys.net</p></a></li>
+        						<li class="mainLi, navTableRow"><a href="http://www.bdsys.net/"><p><span class="blackText, italicBoldObject">WWW</span>.bdsys.net</p></a></li>
         						<ul>
         							<li class="navTableRow, indentText, secondaryLi"><a href="http://www.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
         						</ul>
@@ -35,14 +37,14 @@
         				</tr>
         				<tr>
         					<ul>
-        						<li class="mainLi, navTableRow"><a href="izitpoppin.bdsys.net"><p><span class="italicBoldObject">IZITPOPIN</span>.bdsys.net</p></a></li>
+        						<li class="mainLi, navTableRow"><a href="http://izitpoppin.bdsys.net/"><p><span class="italicBoldObject">IZITPOPIN</span>.bdsys.net</p></a></li>
        							<ul>
        								<li class="navTableRow, indentText, secondaryLi"><a href="http://izitpoppin.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
        							</ul>
         					</ul>
         				</tr>		
         				<tr>
-        					<li class="mainLi, navTableRow"><a href="dev.bdsys.net"><p class="smallRightMargin">Current Development Project</p></a></li>
+        					<li class="mainLi, navTableRow"><a href="http://dev.bdsys.net/"><p class="smallRightMargin">Current Development Project</p></a></li>
         						<ul>
         							<li class="navTableRow, indentText, secondaryLi"><a href="http://toplist.bdsys.net"><p class="smallFont">-Toplist</p></a></li>
         						</ul>
@@ -62,7 +64,7 @@
        								<li class="navTableRow, indentText, secondaryLi"><a href="https://github.com/bdsys/topListWebApp"><p class="smallFont">-Toplist</p></a></li>
         						</ul>
         						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><a href="https://github.com/bdsys/BDSAdminPage"><p class="smallFont">-Admin</p></a></li>
+        							<li class="navTableRow, indentText, secondaryLi"><a href="https://github.com/bdsys/admin.bdsys.net"><p class="smallFont">-Admin</p></a></li>
         						</ul>
         						<ul>
         							<li class="navTableRow, indentText, secondaryLi"><a href="https://github.com/bdsys/stopcispa"><p class="smallFont">-Stop CISPA</p></a></li>
@@ -75,6 +77,33 @@
         						</ul>
         						<ul>
         							<li class="navTableRow, indentText, secondaryLi"><a href="http://amzn.to/ZtXQJY"><p class="smallFont">-Account Login</p></a></li>
+        						</ul>
+        						</div>
+        					<li class="mainLi, navTableRow"><p id="domainControlToggleButton">BDS Domain Control</p></li>
+        						<div id="domainControlToggle">
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://www.godaddy.com/"><p class="smallFont">-Go Daddy Admin Portal</p></a></li>
+        						</ul>
+        						</div>
+        					<li class="mainLi, navTableRow"><p id="googleControlToggleButton">BDS Google Apps Control</p></li>
+        						<div id="googleControlToggle">
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://www.google.com/analytics/"><p class="smallFont">-Analytics</p></a></li>
+        						</ul>
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://www.google.com/intl/en/enterprise/apps/business/"><p class="smallFont">-Apps</p></a></li>
+        						</ul>
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://mail.bdsys.net/"><p class="smallFont">-E Mail</p></a></li>
+        						</ul>
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://calendar.bdsys.net/"><p class="smallFont">-Calendar</p></a></li>
+        						</ul>
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="http://docs.bdsys.net/"><p class="smallFont">-Docs</p></a></li>
+        						</ul>
+        						<ul>
+       								<li class="navTableRow, indentText, secondaryLi"><a href="https://www.google.com/adsense/"><p class="smallFont">-AdSense</p></a></li>
         						</ul>
         						</div>
         				</tr>
@@ -90,30 +119,22 @@
         			<tbody>
         				<tr>
         					<ul>
-        						<li class="mainLi, navTableRow"><a href="www.bdsys.net"><p><span class="blackText, italicBoldObject">WWW</span>.bdsys.net</p></a></li>
-        						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><a href="http://www.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
-        						</ul>
-        					</ul>
-        				</tr>
-        				<tr>
-        					<ul>
-        						<li class="mainLi, navTableRow"><a href="izitpoppin.bdsys.net"><p><span class="italicBoldObject">IZITPOPIN</span>.bdsys.net</p></a></li>
-       							<ul>
-       								<li class="navTableRow, indentText, secondaryLi"><a href="http://izitpoppin.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
-       							</ul>
-        					</ul>
-        				</tr>	
-        				<tr>	
-        					<li class="mainLi, navTableRow"><a href="dev.bdsys.net"><p class="smallRightMargin">Current Development Project</p></a></li>
-        						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><p class="smallFont">-Toplist</p></li>
-        						</ul>
+        						<li class="mainLi, navTableRow"><a href="https://codecademy.com/"><p class="smallRightMargin">Codecademy</p></a></li>
+        						
+        						<li class="mainLi, navTableRow"><a href="http://php.net/manual/en/index.php"><p class="smallRightMargin">PHP Manual</p></a></li>
+        						
+        						<li class="mainLi, navTableRow"><a href="http://www.w3schools.com/"><p class="smallRightMargin">W3 Schools</p></a></li>        						
+        				
+        						<li class="mainLi, navTableRow"><a href="https://www.virtualbox.org/"><p class="smallRightMargin">Virtual Box</p></a></li>
+        						        						        						
+        						<li class="mainLi, navTableRow"><a href="http://www.getpaint.net/"><p class="smallRightMargin">Paint.net</p></a></li>
+        						  
+        						<li class="mainLi, navTableRow"><a href="http://www.aptana.com/products/studio3"><p class="smallRightMargin">Aptana Studio 3 (Web Dev IDE)</p></a></li>
         				</tr>
         			</tbody>
         		</table>
         		</div>
-        		
+	
         		<div class="navTable" id="nav3">
         	<table>
         		<thead>
@@ -152,12 +173,12 @@
          <!-- Above is the unique main body -->
        
          <!-- Below is the footer in every page -->
-    <footer>
+    <footer class="center">
    	
    		<div id="footerID">
    			<h6>Page Design by: Andrew Lass<br> Made In Morro Bay California</h6>
     		<p>&copy; Black Dog Systems</p>
-      		<a href="www.bdsys.net/about"><p> About BDS </p></a>
+      		<a href="www.bdsys.net/about"><p id="aboutBDS" class="italicBoldObject"> About BDS </p></a>
      		<br>	
      		<a href="mailto:admin@bdsys.net?subject=I (emotion you feel here) the Site!">
       		<img id="emailIcon" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS253o3Gv3KJrDDtCRc9DOhQH0pIO4Igfx9l3XF4jDI7kmNLTdB9Q" alt="Email Icon"/></a> 

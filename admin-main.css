@@ -126,6 +126,10 @@ ul {
 	text-indent: 2em;
 }
 
+.center {
+	text-align: center;
+}
+
 /*Above are custom global conditions */
 
 /* Below is the header in every page, this includes the top screen H1 and nav bar */
@@ -151,6 +155,9 @@ header > h6 {
 /* Above header is in every page  */
 
 /* Below is the unique main body */
+
+#mainMenu {
+}
 
 .navTable {
 	display: inline-block;
@@ -203,6 +210,15 @@ header > h6 {
 footer {
 	border-top: .2em solid black; 
 	background-color:#808080;
+	margin-top: 1%;
+}
+
+#footerID {
+	margin-top: 1%;
+}
+
+#aboutBDS {
+	margin-top: .5%;
 }
 
 #emailIcon {
