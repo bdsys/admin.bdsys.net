@@ -29,14 +29,6 @@ $(document).ready(function ()
 	$(".titleText").mouseleave(function() {
 		$(this).css("color", "inherit");
 	});
-	
-	//adds hover background highlight color (white) to all list items per menu
-	$("li").mouseenter(function () {
-		$(this).css("background-color", "white");
-	});
-	$("li").mouseleave(function () {
-		$(this).css("background-color", "inherit");
-	});
 		
 	//the below slide toggles control the sub-menu display upon user mouse1 input
 	$("#currentDevToggleButton").click(function () {
