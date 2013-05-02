@@ -156,6 +156,10 @@ header > h6 {
 
 /* Below is the unique main body */
 
+#mainTitleLi {
+	margin-bottom: 1%;	
+}
+
 #mainMenu {
 }
 
@@ -166,7 +170,7 @@ header > h6 {
 	width: auto;
 }
 
- h3 {
+h3 {
 	font-style:italic;
 	font-size: x-large;
 	font-weight:800;
@@ -189,8 +193,16 @@ header > h6 {
 	margin-right: 2em;
 }
 
+.titleText {
+	margin-bottom: 4%;
+}
+
 #navLeft {
 	margin: 1% auto 1% 2%;
+}
+
+#googleControlToggleButton {
+	margin-right: 10%;
 }
 
 #nav2, #nav3, #nav4 {

@@ -5,35 +5,52 @@
 $(document).ready(function ()
 {	
 	
+	//initialize DOM elements
+	$(".collapseAll, #currentDevToggle, #gitHubToggle, #AWSToggle, #prodAppsToggle, #domainControlToggle, #googleControlToggle").hide();
+	
+	
+	//primitive expand/collapse all buttons
+	$(".expandAll").click(function () {
+		$(".expandAll").slideToggle("slow");
+		$(".collapseAll").slideToggle("slow");
+		$("#currentDevToggle, #gitHubToggle, #AWSToggle, #prodAppsToggle, #domainControlToggle, #googleControlToggle").slideToggle("slow");
+	});
+	
+	$(".collapseAll").click(function () {
+		$(".collapseAll").slideToggle("slow");
+		$(".expandAll").slideToggle("slow");
+		$("#currentDevToggle, #gitHubToggle, #AWSToggle, #prodAppsToggle, #domainControlToggle, #googleControlToggle").slideToggle("slow");
+	});
+	
+	//adds hover color to the category titles
 	$(".titleText").mouseenter(function () {
 		$(this).css("color", "red");
 	});
 	$(".titleText").mouseleave(function() {
 		$(this).css("color", "inherit");
 	});
+		
+	//the below slide toggles control the sub-menu display upon user mouse1 input
+	$("#currentDevToggleButton").click(function () {
+		$("#currentDevToggle").slideToggle("slow");
+	});
 	
-	$("#gitHubToggle").hide();
 	$("#gitHubToggleButton").click(function () {
 		$("#gitHubToggle").slideToggle("slow");
 	});
 	
-	$("#AWSToggle").hide();
 	$("#AWSToggleButton").click(function () {
 		$("#AWSToggle").slideToggle("slow");
 	});
 	
-	$("#prodAppsToggle").hide();
 	$("#prodAppsToggleButton").click(function () {
 		$("#prodAppsToggle").slideToggle("slow");
 	});
 	
-	$("#domainControlToggle").hide();
 	$("#domainControlToggleButton").click(function() {
 		$("#domainControlToggle").slideToggle("slow");
 	});
 	
-	
-	$("#googleControlToggle").hide();
 	$("#googleControlToggleButton").click(function() {
 		$("#googleControlToggle").slideToggle("slow");
 	});
@@ -48,7 +65,6 @@ $(document).ready(function ()
 		$("#facebookIcon").fadeTo("fast", 1);
 	});
 	
-	
 	$("#twitterIcon").mouseenter(function (){
 		$("#emailIcon").fadeTo("fast", 0.5);
 		$("#facebookIcon").fadeTo("fast", 0.5);
@@ -58,11 +74,11 @@ $(document).ready(function ()
 		$("#facebookIcon").fadeTo("fast", 1);
 	});
 	
-	
 	$("#facebookIcon").mouseenter(function (){
 		$("#twitterIcon").fadeTo("fast", 0.5);
 		$("#emailIcon").fadeTo("fast", 0.5);
 	});
+	
 	$("#facebookIcon").mouseleave(function (){
 		$("#twitterIcon").fadeTo("fast", 1);
 		$("#emailIcon").fadeTo("fast", 1);

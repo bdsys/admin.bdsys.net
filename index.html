@@ -15,16 +15,22 @@
         <h1>Black Dog Systems Administration</h1>
         <img id="bdsysLogo" src="http://s3.amazonaws.com/codecademy-production/profile_thumbnail/5110a11631e4b98fd10020c4_420022162.png"/>
         <h6 class="italicObject">The One Stop for BDSYS Admins
-        	<br><span class="smallFont"> <li>Click to expand Menu when you see these!</li></span></h6>
+        	<br><span class="smallFont"> <li  id="mainTitleLi">Click to expand Menu when you see these!</li></span></h6>
 
         </header>
         <!-- Header above is on every page -->
+        
+        <img class="expandAll" src="/expand-all.png"/>
+        <p class="expandAll">Expand</p>
+        <img class="collapseAll" src="/collapse-all.png"/>
+        <p class="collapseAll">Collapse</p>
         
         <nav class="center" id="mainMenu">	
         		<div class="navTable" id="navLeft">
         	<table>
         		<thead>
-        			<tr><h3 class="secondaryLi, titleText">Admin Links</h3></tr>
+        			<tr><h3 class="secondaryLi, titleText">Admin Links
+        												<br>(Internal)</h3></tr>
         		</thead>
         			<tbody>
         				<tr>
@@ -44,17 +50,30 @@
         					</ul>
         				</tr>		
         				<tr>
-        					<li class="mainLi, navTableRow"><a href="http://dev.bdsys.net/"><p class="smallRightMargin">Current Development Project</p></a></li>
+        					<li class="mainLi, navTableRow"><p class="smallRightMargin" id="currentDevToggleButton">Current Development Project</p></li>
+        						<div id="currentDevToggle">
         						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><a href="http://toplist.bdsys.net"><p class="smallFont">-Toplist</p></a></li>
+        							<li class="navTableRow, indentText, secondaryLi"><a href="http://toplist.bdsys.net"><p class="smallFont">-Toplist (DEV.bdsys.net)</p></a></li>
         						</ul>
-        							
+        						</div>
        						<li class="mainLi, navTableRow"><p id="prodAppsToggleButton">Production Apps</p></li>
        							<div id="prodAppsToggle">
        							<ul>
        								<li class="navTableRow, indentText, secondaryLi"><a href="http://toplist.bdsys.net/"><p class="smallFont"><span class="italicBoldObject">TOPLIST</span>.bdsys.net</p></a></li>
        							</ul>
-       							</div>
+       							</div>		
+        				</tr>
+        			</tbody>
+        		</table>
+        		</div>
+        		
+        		<div class="navTable" id="nav2">
+        	<table>
+        		<thead>
+        			<tr><h3 class="secondaryLi, titleText">Admin Links
+        																			<br>(External)</h3></tr>
+        		</thead>
+        			<tbody>       				
        						<li class="mainLi, navTableRow"><p id="gitHubToggleButton">Github Projects</p></li>
        							<div id="gitHubToggle">
        							<ul>
@@ -111,7 +130,8 @@
         		</table>
         		</div>
         		
-        		<div class="navTable" id="nav2">
+        		
+        		<div class="navTable" id="nav3">
         	<table>
         		<thead>
         			<tr><h3 class="secondaryLi, titleText">Resource Links</h3></tr>
@@ -135,7 +155,7 @@
         		</table>
         		</div>
 	
-        		<div class="navTable" id="nav3">
+        			<div class="navTable" id="nav4">
         	<table>
         		<thead>
         			<tr><h3 class="secondaryLi, titleText">Meow Links</h3></tr>
@@ -143,25 +163,15 @@
         			<tbody>
         				<tr>
         					<ul>
-        						<li class="mainLi, navTableRow"><a href="www.bdsys.net"><p><span class="blackText, italicBoldObject">WWW</span>.bdsys.net</p></a></li>
-        						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><a href="http://www.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
-        						</ul>
-        					</ul>
-        				</tr>
-        				<tr>
-        					<ul>
-        						<li class="mainLi, navTableRow"><a href="izitpoppin.bdsys.net"><p><span class="italicBoldObject">IZITPOPIN</span>.bdsys.net</p></a></li>
-       							<ul>
-       								<li class="navTableRow, indentText, secondaryLi"><a href="http://izitpoppin.bdsys.net/wp-admin/"><p class="smallFont">Wordpress Admin Page</p></a></li>
-       							</ul>
-        					</ul>
-        				</tr>	
-        				<tr>	
-        					<li class="mainLi, navTableRow"><a href="dev.bdsys.net"><p class="smallRightMargin">Current Development Project</p></a></li>
-        						<ul>
-        							<li class="navTableRow, indentText, secondaryLi"><p class="smallFont">-Toplist</p></li>
-        						</ul>       						     						
+        						<li class="mainLi, navTableRow"><a href="http://twit.tv/"><p class="smallRightMargin">Twit.tv</p></a></li>
+        						
+        						<li class="mainLi, navTableRow"><a href="http://www.wtfpod.com/"><p class="smallRightMargin">WTF Pod</p></a></li>        						
+        				
+        						<li class="mainLi, navTableRow"><a href="http://www.radiolab.org/"><p class="smallRightMargin">Radio Lab</p></a></li>
+        						
+        						<li class="mainLi, navTableRow"><a href="http://www.thisamericanlife.org/"><p class="smallRightMargin">This American Life</p></a></li>
+        						        						        						
+        						<li class="mainLi, navTableRow"><a href="https://play.spotify.com/"><p class="smallRightMargin">Spotify (Web GUI)</p></a></li>       						        						
         				</tr>
         			</tbody>
         		</table>
